@@ -24,15 +24,12 @@ pipeline{
         }
 
         // Stage3 : Publish the source code to Sonarqube
-        stage ('Build'){
+        stage ('Deploy'){
             steps {
                 echo ' Building......'
-            }
-            
+            } 
         }
-
-        
-        
+ 
     }
 
 }
