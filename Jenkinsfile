@@ -27,7 +27,7 @@ pipeline{
 
         stage ('Publish to Nexus'){
             steps {
-                nexusArtifactUploader artifacts: [[artifactId: 'BasanDevOpsLab', classifier: '', file: 'target/BasanDevOpsLab-0.0.4-SNAPSHOT.war', type: 'war']], credentialsId: '', groupId: 'com.basansdevopslab', nexusUrl: '172.20.10.92', nexusVersion: 'nexus3', protocol: 'http', repository: 'BasansDevOpsLab-SNAPSHOT', version: '0.0.4-SNAPSHOT'
+                nexusArtifactUploader artifacts: [[artifactId: 'BasanDevOpsLab', classifier: '', file: 'target/BasanDevOpsLab-0.0.5-SNAPSHOT.war', type: 'war']], credentialsId: '', groupId: 'com.basansdevopslab', nexusUrl: '172.20.10.92:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'BasansDevOpsLab-SNAPSHOT', version: '0.0.5-SNAPSHOT'
             }
         }
 
